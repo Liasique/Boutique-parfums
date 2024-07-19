@@ -1,12 +1,23 @@
-import React    from "react";
+import React from "react";
+import FormRegister from "./espaceClient/FormRegister";
+import FormLogin from "./espaceClient/FormLogin";
 
-const Accueil = () => {
-
-    return (
-        <div>
-            <h1>Accueil</h1>
+const EspaceClient = () => {
+  return (
+    <div>
+      <h1>EspaceClient</h1>
+      <div className="row">
+        <div className="col-md-6">
+          <h2>REGESTRATION</h2>
+          <FormRegister />
         </div>
-    )
-}
+        <div className="col-md-6">
+          <h2>LOGIN</h2>
+          <FormLogin />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Accueil
+export default EspaceClient;
